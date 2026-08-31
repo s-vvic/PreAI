@@ -1,5 +1,10 @@
 #include <stdio.h>
+#include "stack.h"
 
 int main() {
-    printf("Hello PreAI");
+    Stack s;
+    push(s, 1);
+    push(s, 2);
+    int data = pop(s);
+    printf("%d", data);
 }
