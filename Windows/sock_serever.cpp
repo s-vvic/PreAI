@@ -38,7 +38,7 @@ int main() {
     memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family      = AF_INET;
     server_addr.sin_port        = htons(8080);
-    server_addr.sin_addr.s_addr = (INADDR_ANY);
+    server_addr.sin_addr.s_addr = inet_addr(INADDR_ANY);
 
     if (bind(server_socket, (SOCKADDR *)&server_addr, sizeof(server_addr)) == -1) {
         cout << "bind error" << endl;
