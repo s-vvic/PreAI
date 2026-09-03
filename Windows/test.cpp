@@ -38,4 +38,5 @@ int main() {
     cout << t2->getCount() << endl;
     t2->setData(20);
     cout << t2->getData() << endl;
+    delete(t2);
 }
