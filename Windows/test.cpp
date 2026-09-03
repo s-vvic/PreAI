@@ -8,6 +8,11 @@ class Test {
         int data;
 
     public:
+        Test() {
+            count = 10;
+        }
+
+    public:
         void increCount() {
             this->count++;
         }
