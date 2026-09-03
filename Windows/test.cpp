@@ -6,6 +6,7 @@ class Test {
     private:
         int count;
         int data;
+
     public:
         void increCount() {
             this->count++;
@@ -26,9 +27,15 @@ class Test {
 };
 
 int main() {
-    Test t = Test();
-    t.increCount();
-    cout << t.getCount() << endl;
-    t.setData(10);
-    cout << t.getData() << endl;
+    Test t1 = Test();
+    t1.increCount();
+    cout << t1.getCount() << endl;
+    t1.setData(10);
+    cout << t1.getData() << endl;
+
+    Test *t2 = new Test();
+    t2->decreCount();
+    cout << t2->getCount() << endl;
+    t2->setData(20);
+    cout << t2->getData() << endl;
 }
