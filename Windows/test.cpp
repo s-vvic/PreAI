@@ -8,9 +8,7 @@ class Test {
         int data;
 
     public:
-        Test() {
-            count = 10;
-        }
+        Test() : count(20) {}
 
     public:
         void increCount() {
