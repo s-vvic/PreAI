@@ -25,7 +25,6 @@ class Test {
         int getCount() {
             return this->count;
         }
-
         int getData() {
             return this->data;
         }
