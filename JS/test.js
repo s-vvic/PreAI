@@ -1,9 +1,9 @@
 var url = "https://jsonplaceholder.typicode.com/posts/1";
 
 fetch(url, {
-  method: "PUT",
+  method: "POST",
   headers: {
-    "Content-Type": "application/json",
+    "Content-type": "application/json",
   },
   body: JSON.stringify({
     title: "Test",

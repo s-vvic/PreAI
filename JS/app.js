@@ -1,8 +1,9 @@
 const express = require("express");
 
 var app = express();
+var port = 8080;
 
-app.listen(8080, function () {
+app.listen(port, function () {
   console.log("server on 8080 port!");
 });
 
